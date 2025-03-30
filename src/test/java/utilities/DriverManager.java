@@ -40,16 +40,20 @@ public class DriverManager {
 
     private void buildRemoteDriver() {
         try {
-            final var remoteAppiumUrl = System.getProperty("remoteUrl", "http://remote-server-url:4723/");
+            final var remoteAppiumUrl = System.getProperty("remoteUrl", "http://127.0.0.1:4723/");
             final var desiredCapabilities = getDesiredRemoteCapabilities();
 
-            Logs.debug("Initializing remote Appium driver");
+            Logs.debug("Initializing remote Appium driver with URL: %s", remoteAppiumUrl);
             final var driver = new AndroidDriver(new URL(remoteAppiumUrl), desiredCapabilities);
 
             Logs.debug("Assign remote driver to driver provider");
             new DriverProvider().set(driver);
         } catch (MalformedURLException e) {
+            Logs.error("Invalid Appium server URL", e);
             throw new RuntimeException("Invalid remote Appium server URL: " + e.getMessage(), e);
+        } catch (Exception e) {
+            Logs.error("Could not start a new Appium session", e);
+            throw new RuntimeException("Failed to start remote session: " + e.getMessage(), e);
         }
     }
 
@@ -70,17 +74,14 @@ public class DriverManager {
     private static DesiredCapabilities getDesiredRemoteCapabilities() {
         final var desiredCapabilities = new DesiredCapabilities();
 
-        final var fileAPK = new File("src/test/resources/apk/wdioAPP.apk");
+        final var appPath = new File("src/test/resources/apk/wdioAPP.apk").getAbsolutePath();
 
         desiredCapabilities.setCapability("appium:platformName", "Android");
         desiredCapabilities.setCapability("appium:automationName", "UiAutomator2");
-        desiredCapabilities.setCapability("appium:deviceName", "Android Emulator");
-        desiredCapabilities.setCapability("appium:platformVersion", "11.0");
+        desiredCapabilities.setCapability("appium:deviceName", System.getProperty("deviceName", "Android Emulator"));
+        desiredCapabilities.setCapability("appium:app", appPath);
         desiredCapabilities.setCapability("appium:appWaitActivity", "com.wdiodemoapp.MainActivity");
         desiredCapabilities.setCapability("appium:autoGrantPermissions", true);
-
-        // Use either a local path or URL to the .apk depending on your remote setup
-        desiredCapabilities.setCapability("appium:app", fileAPK.getAbsolutePath());
 
         return desiredCapabilities;
     }

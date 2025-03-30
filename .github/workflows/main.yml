@@ -38,6 +38,22 @@ jobs:
           key: maven-${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
           restore-keys: maven-${{ runner.os }}
 
+      - name: Start Appium Server
+        run: |
+          npm install -g appium
+          appium server --allow-insecure chromedriver_autodownload &
+          sleep 15
+
+      - name: Start Android Emulator and Install APK
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y android-sdk adb unzip
+          echo "no" | avdmanager create avd -n test -k "system-images;android-30;google_apis;x86_64" --force
+          $ANDROID_HOME/emulator/emulator -avd test -no-window -no-audio &
+          sleep 60
+          adb devices
+          adb install -r src/test/resources/apk/wdioAPP.apk
+
       - name: Run Tests
         run: |
           chmod +x mvnw
