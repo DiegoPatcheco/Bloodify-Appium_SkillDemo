@@ -1,0 +1,10 @@
+17:33:33.628 INFO  AUTOMATION - on suite start
+17:33:40.211 INFO  AUTOMATION - Waiting for screen HomePage to load
+17:33:40.929 INFO  AUTOMATION - %s screen has loaded successfully
+17:33:40.936 INFO  AUTOMATION - Navigate to drag screen
+17:33:41.067 INFO  AUTOMATION - Waiting for screen DragPage to load
+17:33:41.741 INFO  AUTOMATION - %s screen has loaded successfully
+17:33:41.745 INFO  AUTOMATION - on test start
+17:33:54.806 INFO  AUTOMATION - Verify congratulations screen
+17:33:59.639 INFO  AUTOMATION - on test success
+17:33:59.868 INFO  AUTOMATION - on suite finish

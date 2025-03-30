@@ -1,0 +1,79 @@
+17:33:33.628 INFO  AUTOMATION - on suite start
+17:33:33.747 DEBUG AUTOMATION - Initializing driver
+17:33:33.749 DEBUG AUTOMATION - Initializing driver
+17:33:40.135 DEBUG AUTOMATION - Assign driver to driver provider
+17:33:40.211 INFO  AUTOMATION - Waiting for screen HomePage to load
+17:33:40.929 INFO  AUTOMATION - %s screen has loaded successfully
+17:33:40.936 INFO  AUTOMATION - Navigate to drag screen
+17:33:41.067 INFO  AUTOMATION - Waiting for screen DragPage to load
+17:33:41.741 INFO  AUTOMATION - %s screen has loaded successfully
+17:33:41.745 INFO  AUTOMATION - on test start
+17:33:41.897 DEBUG AUTOMATION - Move finger to origin
+17:33:41.898 DEBUG AUTOMATION - Press finger
+17:33:41.898 DEBUG AUTOMATION - Hold finger 1s
+17:33:41.898 DEBUG AUTOMATION - Move finger to destiny
+17:33:41.898 DEBUG AUTOMATION - Hold finger 1s
+17:33:41.899 DEBUG AUTOMATION - Release finger
+17:33:41.899 DEBUG AUTOMATION - Perform action
+17:33:43.431 DEBUG AUTOMATION - Move finger to origin
+17:33:43.431 DEBUG AUTOMATION - Press finger
+17:33:43.431 DEBUG AUTOMATION - Hold finger 1s
+17:33:43.431 DEBUG AUTOMATION - Move finger to destiny
+17:33:43.431 DEBUG AUTOMATION - Hold finger 1s
+17:33:43.431 DEBUG AUTOMATION - Release finger
+17:33:43.431 DEBUG AUTOMATION - Perform action
+17:33:44.929 DEBUG AUTOMATION - Move finger to origin
+17:33:44.929 DEBUG AUTOMATION - Press finger
+17:33:44.929 DEBUG AUTOMATION - Hold finger 1s
+17:33:44.929 DEBUG AUTOMATION - Move finger to destiny
+17:33:44.929 DEBUG AUTOMATION - Hold finger 1s
+17:33:44.929 DEBUG AUTOMATION - Release finger
+17:33:44.929 DEBUG AUTOMATION - Perform action
+17:33:46.515 DEBUG AUTOMATION - Move finger to origin
+17:33:46.516 DEBUG AUTOMATION - Press finger
+17:33:46.516 DEBUG AUTOMATION - Hold finger 1s
+17:33:46.516 DEBUG AUTOMATION - Move finger to destiny
+17:33:46.516 DEBUG AUTOMATION - Hold finger 1s
+17:33:46.516 DEBUG AUTOMATION - Release finger
+17:33:46.516 DEBUG AUTOMATION - Perform action
+17:33:47.989 DEBUG AUTOMATION - Move finger to origin
+17:33:47.989 DEBUG AUTOMATION - Press finger
+17:33:47.990 DEBUG AUTOMATION - Hold finger 1s
+17:33:47.990 DEBUG AUTOMATION - Move finger to destiny
+17:33:47.990 DEBUG AUTOMATION - Hold finger 1s
+17:33:47.990 DEBUG AUTOMATION - Release finger
+17:33:47.990 DEBUG AUTOMATION - Perform action
+17:33:49.484 DEBUG AUTOMATION - Move finger to origin
+17:33:49.484 DEBUG AUTOMATION - Press finger
+17:33:49.484 DEBUG AUTOMATION - Hold finger 1s
+17:33:49.484 DEBUG AUTOMATION - Move finger to destiny
+17:33:49.484 DEBUG AUTOMATION - Hold finger 1s
+17:33:49.485 DEBUG AUTOMATION - Release finger
+17:33:49.485 DEBUG AUTOMATION - Perform action
+17:33:50.977 DEBUG AUTOMATION - Move finger to origin
+17:33:50.977 DEBUG AUTOMATION - Press finger
+17:33:50.977 DEBUG AUTOMATION - Hold finger 1s
+17:33:50.977 DEBUG AUTOMATION - Move finger to destiny
+17:33:50.977 DEBUG AUTOMATION - Hold finger 1s
+17:33:50.977 DEBUG AUTOMATION - Release finger
+17:33:50.977 DEBUG AUTOMATION - Perform action
+17:33:52.469 DEBUG AUTOMATION - Move finger to origin
+17:33:52.469 DEBUG AUTOMATION - Press finger
+17:33:52.469 DEBUG AUTOMATION - Hold finger 1s
+17:33:52.469 DEBUG AUTOMATION - Move finger to destiny
+17:33:52.469 DEBUG AUTOMATION - Hold finger 1s
+17:33:52.469 DEBUG AUTOMATION - Release finger
+17:33:52.469 DEBUG AUTOMATION - Perform action
+17:33:53.965 DEBUG AUTOMATION - Move finger to origin
+17:33:53.965 DEBUG AUTOMATION - Press finger
+17:33:53.965 DEBUG AUTOMATION - Hold finger 1s
+17:33:53.965 DEBUG AUTOMATION - Move finger to destiny
+17:33:53.965 DEBUG AUTOMATION - Hold finger 1s
+17:33:53.965 DEBUG AUTOMATION - Release finger
+17:33:53.965 DEBUG AUTOMATION - Perform action
+17:33:54.806 INFO  AUTOMATION - Verify congratulations screen
+17:33:59.634 DEBUG AUTOMATION - Taking allure screenshots
+17:33:59.639 INFO  AUTOMATION - on test success
+17:33:59.640 DEBUG AUTOMATION - Killing driver
+17:33:59.640 DEBUG AUTOMATION - Killing driver
+17:33:59.868 INFO  AUTOMATION - on suite finish
