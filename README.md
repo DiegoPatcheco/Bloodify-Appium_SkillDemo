@@ -1,65 +1,68 @@
-# Bloodify-Appium\_SkillDemo
+# Bloodify-Appium_SkillDemo
 
 ## Overview
-
-Bloodify-Appium\_SkillDemo is a project developed to efficiently automate mobile application testing across Android platforms. It showcases skills in Java, Appium, mobile testing, TestNG, device handling, CI/CD integration, and strong problem-solving and debugging capabilities in cross-platform environments.
+Bloodify-Appium_SkillDemo is a project built to efficiently automate mobile application testing across Android platforms. It demonstrates expertise in Java, Appium, mobile testing, TestNG, device handling, CI/CD integration, and strong problem-solving and debugging skills for cross-platform environments.
 
 ## Features
-
-- Built using **Appium** and **TestNG** for robust mobile automation.
-- Integrated with **Maven Wrapper** for simplified build and dependency management.
-- CI/CD integration with **GitHub Actions** to ensure continuous testing and delivery.
+- Built using **Appium** and **TestNG** for robust and scalable test automation.
+- Integrated with **Maven Wrapper** for easier build management and dependency handling.
+- CI/CD enabled through **GitHub Actions**.
 - Automatically generates detailed test reports using **Allure Report**.
 
 ## Prerequisites
-
-Before setting up the project, make sure you have the following installed:
-
+Before setting up and running the project, ensure you have the following installed:
 - [Amazon Corretto JDK 17.0.14](https://aws.amazon.com/corretto/)
-- [Maven](https://maven.apache.org/install.html) (if not using Maven Wrapper)
+- [Maven](https://maven.apache.org/install.html) (optional if using Maven Wrapper)
 - [Git](https://git-scm.com/downloads)
-- Libraries: Appium, Selenium-Java, TestNG, Allure (managed via Maven)
+- Appium, Selenium-Java, TestNG, and Allure libraries (managed via Maven)
 
-## APK Location
+## APK Path
+- The APK used for testing is located in the following path:
+  ```
+  src/test/resources/apk
+  ```
 
-The APK used for testing is located at:
-
+## Appium Server Initialization
+On a new machine, the Appium Server must be initialized for the first time using:
+```sh
+appium server --allow-insecure chromedriver_autodownload
 ```
-src/test/resources/apk
+After that, for future executions, you can simply run:
+```sh
+appium server
 ```
+
+## Device Setup
+Before running the tests:
+- Start the Android emulator **or** connect a physical device.
+- Ensure the correct APK is already installed on the device.
 
 ## Installation
-
 1. Clone the repository:
    ```sh
    git clone https://github.com/DiegoPatcheco/Bloodify-Appium_SkillDemo.git
    ```
-2. Navigate to the project directory:
+2. Navigate into the project directory:
    ```sh
    cd Bloodify-Appium_SkillDemo
    ```
-3. Install dependencies and build the project using Maven Wrapper:
+3. Build the project using Maven Wrapper:
    ```sh
    ./mvnw clean install
    ```
-   *(On Windows use ******`mvnw.cmd`****** instead)*
 
 ## Running Tests
-
-To run the test suite:
-
+To execute the automated test suite:
 ```sh
 ./mvnw clean test
 ```
 
-You can also run a predefined test suite with:
-
+You can also run a predefined suite using:
 ```sh
 ./runSuite.sh
 ```
 
-## Allure Reports
-
+## Allure Report
 - The **Allure Report** is generated automatically after test execution.
 - To view the report locally:
   ```sh
@@ -67,19 +70,16 @@ You can also run a predefined test suite with:
   ```
 
 ## CI/CD Integration
-
-- The project is integrated with **GitHub Actions**, which triggers the test suite on every push or pull request.
-- Test results and **Allure Reports** are accessible via the **Actions** tab in GitHub.
+- GitHub Actions is configured to automatically trigger test execution on every push or pull request.
+- Allure reports and test results are available in the GitHub Actions artifacts after each run.
 
 ## Contributing
-
 Contributions are welcome! To contribute:
-
 1. Fork the repository.
-2. Create a new branch (`feature-branch`).
-3. Commit your changes.
-4. Push to your branch and submit a pull request.
+2. Create a new feature branch.
+3. Commit and push your changes.
+4. Open a pull request.
 
 ## Author
-
 Developed by [Diego Patcheco](https://github.com/DiegoPatcheco).
+
