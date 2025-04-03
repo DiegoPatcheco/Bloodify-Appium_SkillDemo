@@ -1,7 +1,7 @@
 # Bloodify-Appium_SkillDemo
 
 ## Overview
-Bloodify-Appium_SkillDemo is a project built to efficiently automate mobile application testing across Android platforms. It demonstrates expertise in Java, Appium, mobile testing, TestNG, device handling, CI/CD integration, and strong problem-solving and debugging skills for cross-platform environments.
+Bloodify-Appium_SkillDemo is a project built to efficiently automate mobile application testing across Android platforms. It demonstrates expertise in Java, Appium, mobile testing, TestNG, device handling, and strong problem-solving and debugging skills for cross-platform environments.
 
 ## Features
 - Built using **Appium** and **TestNG** for robust and scalable test automation.
@@ -68,10 +68,6 @@ You can also run a predefined suite using:
   ```sh
   ./openAllure.sh
   ```
-
-## CI/CD Integration
-- GitHub Actions is configured to automatically trigger test execution on every push or pull request.
-- Allure reports and test results are available in the GitHub Actions artifacts after each run.
 
 ## Contributing
 Contributions are welcome! To contribute:
